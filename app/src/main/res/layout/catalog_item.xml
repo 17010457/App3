@@ -35,15 +35,26 @@
                 android:text="Simple Black T-Shirt"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="20sp" />
-            <TextView
-                android:id="@+id/menu_price"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/josefinsansbold"
-                android:textSize="30dp"
-                android:padding="8dp"
-                android:textColor="@color/colorPrimaryDark"
-                android:text="$189.99"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_attach_money_black_24dp"/>
+                <TextView
+                    android:id="@+id/menu_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/josefinsansbold"
+                    android:textSize="30dp"
+                    android:paddingTop="4dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="189.99"/>
+            </LinearLayout>
+
         </LinearLayout>
     </LinearLayout>
 

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -27,6 +28,7 @@ public class CatalogActivity extends AppCompatActivity {
 
     RecyclerView recycler_menu;
     RecyclerView.LayoutManager layManager;
+
     FirebaseRecyclerAdapter<Catalog, MenuViewHolder> adapter;
 
     String menuId ="";
@@ -50,7 +52,6 @@ public class CatalogActivity extends AppCompatActivity {
                 loadListItem(menuId);
             }
         }
-
     }
 
     private void loadListItem(String menuId) {
